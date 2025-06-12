@@ -42,12 +42,12 @@ Both cells and edges are handled by a central maze class, which has the followin
 
 Because the maze generation was based on the weight of the edges, it is possible to create mazes with biases in different directions by changing the randomess of the weights. For example, below are mazes with 75% (left) and 100% (right) vertical bias on edges. (Note that even with 100% bias, there must still be some horizontal connections to make a viable maze.)<br />
 
-<img src="mostlyVertical.png" alt="Description" width="45%">
-<img src="vertical.png" alt="Description" width="45%">
+<img src="mostlyVertical.png" alt="Description" width="40%">
+<img src="vertical.png" alt="Description" width="40%">
 
 Another added feature to this project is the ability for cells to know their distance within the maze to other cells. Below are mazes with each cell colored in a gradient from red to blue with the distance from either the start (left) or the end (right). Note that these are not just reversed maps of each other due to the nature of trees/mazes.<br />
-<img src="distFromStart.png" alt="Description" width="45%">
-<img src="distFromEnd.png" alt="Description" width="45%">
+<img src="distFromStart.png" alt="Description" width="40%">
+<img src="distFromEnd.png" alt="Description" width="40%">
 
 Finally, the most complex addition to this project was hexagonal mazes. Because from a graph perspective hexagonal mazes are no more complex than square mazes, most of the code did not have to be changed, but many of the processes (including cells and edges) had to be abstracted to allow for the new layout.
 
